@@ -5,7 +5,16 @@ Python code and CAD files for a single, 2 DOF robotic leg. This design uses 2 [3
 
 ## Specs
 
+- Thigh joint to knee joint: 200mm
+- Knee joint to center of foot: 185mm
+- 
+
 ## Manufacturing and Assembly 
 
 ## Setup
 
+Zero positions should be set for both the knee and calf joint using `sudo python3 -m moteus.moteus_tool --target 1 --zero-offset` and `python3 -m moteus.moteus_tool --target 2 --zero-offset` while the leg is oriented in a completed downward position (thigh and calf are colinear and pointed down). 
+
+Set `servopos.position_min` and `servopos.position_max` to `-3.0`, `0.5` and `-3.2`, `0.5` for the thigh and knee servo, respectively. 
+
+Reference the the [moteus documentation](https://github.com/mjbots/moteus/tree/main) for additional guidance.
