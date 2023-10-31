@@ -5,7 +5,7 @@ Python code and CAD files for a single, 2 DOF robotic leg. This design uses 2 [3
 
 ## Media
 
-TODO: walking routine, position control, pictures
+
 
 ## Specs
 
